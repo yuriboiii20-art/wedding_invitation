@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>Ishaan & Anaya — Wedding Invitation</title>
+<title>Syed Fazal Ur Rahman — Wedding & Nikah Invitation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
@@ -343,7 +343,7 @@
 
   .hero-card {
     width: 100%;
-    max-width: 360px;
+    max-width: 380px;
     opacity: 0;
     pointer-events: none;
     display: flex;
@@ -383,27 +383,27 @@
     50% { transform: translateY(-4px) scale(1.1); }
   }
 
-  .hero-tagline, .hero-divider, .groom-block, .hero-ampersand, .bride-block, .scroll-prompt {
-    opacity: 0;
-    transform: translateY(14px);
-    transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  body.video-ended .hero-tagline { opacity: 1; transform: translateY(0); transition-delay: 0.1s; }
-  body.video-ended .hero-divider { opacity: 1; transform: translateY(0); transition-delay: 0.2s; }
-  body.video-ended .groom-block { opacity: 1; transform: translateY(0); transition-delay: 0.3s; }
-  body.video-ended .hero-ampersand { opacity: 1; transform: translateY(0); transition-delay: 0.4s; }
-  body.video-ended .bride-block { opacity: 1; transform: translateY(0); transition-delay: 0.5s; }
-  body.video-ended .scroll-prompt { opacity: 0.92; transform: translateY(0); transition-delay: 0.65s; }
-
-  .hero-tagline {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 26px;
-    font-weight: 500;
-    font-style: italic;
-    color: #ffffff;
-    letter-spacing: 1.2px;
-    margin-bottom: 8px;
+  .hero-parents-header {
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--gold-200);
+    text-transform: uppercase;
+    margin: 2px 0 6px;
     text-shadow: 0 2px 10px rgba(0,0,0,0.95);
+  }
+
+  .hero-blessing-text {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.45;
+    margin: 0 0 10px;
+    max-width: 340px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.95);
   }
 
   .hero-divider {
@@ -412,7 +412,7 @@
     justify-content: center;
     gap: 12px;
     width: 220px;
-    margin: 4px auto 12px;
+    margin: 2px auto 8px;
   }
   .hero-divider .div-line {
     flex: 1;
@@ -424,60 +424,146 @@
     color: #ffffff;
   }
 
-  .person-block {
-    margin: 4px 0;
+  .groom-highlight-block {
+    margin: 4px 0 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .person-name {
+  .groom-name {
     margin: 0;
     font-family: 'Great Vibes', 'Alex Brush', cursive;
-    font-size: 58px;
+    font-size: 52px;
     font-weight: 400;
-    line-height: 1.1;
+    line-height: 1.15;
     color: var(--gold-300);
     background: var(--gold-grad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 2px 12px rgba(245, 186, 49, 0.5));
-    padding-bottom: 4px;
+    filter: drop-shadow(0 2px 14px rgba(245, 186, 49, 0.6));
+    padding-bottom: 2px;
+    white-space: nowrap;
   }
 
-  .person-parents {
-    margin: 4px 0 2px;
-    font-size: 13.5px;
-    font-weight: 500;
-    color: #ffffff;
-    letter-spacing: 0.4px;
-  }
-
-  .person-degree {
-    margin: 2px 0 1px;
-    font-size: 13px;
-    font-weight: 500;
-    color: #f6ecdb;
-  }
-
-  .person-profession {
-    margin: 1px 0;
-    font-size: 13px;
-    font-weight: 400;
+  .nikah-bond-tag {
+    margin: 4px 0 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
     font-style: italic;
-    color: #f6ecdb;
+    font-weight: 600;
+    color: var(--gold-200);
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.9);
   }
 
-  .hero-ampersand {
-    margin: 4px 0;
-    font-family: 'Great Vibes', 'Alex Brush', cursive;
-    font-size: 42px;
-    line-height: 1;
+  .hero-duas-text {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 14.5px;
+    font-style: italic;
+    color: var(--cream-muted);
+    line-height: 1.5;
+    max-width: 330px;
+    margin: 8px auto 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.95);
+  }
+
+  .date-hijri {
+    font-size: 13px;
+    font-style: italic;
+    color: var(--gold-200);
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  .ceremony-hijri {
+    font-size: 11.5px;
+    font-style: italic;
+    color: var(--gold-200);
+    margin-bottom: 2px;
+  }
+
+  .mini-pill-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font: 600 11.5px/1 'Montserrat', sans-serif;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(245, 186, 49, 0.6);
+    background: rgba(245, 186, 49, 0.15);
+    color: var(--gold-100);
+    text-decoration: none;
+    margin-top: 6px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: all 0.25s ease;
+  }
+  .mini-pill-btn:hover {
+    background: rgba(245, 186, 49, 0.35);
+    border-color: var(--gold-300);
+    transform: translateY(-1px);
+  }
+
+  .venue-tag-gold {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
     color: var(--gold-300);
-    background: var(--gold-grad);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 2px 8px rgba(245, 186, 49, 0.45));
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    text-shadow: 0 0 10px rgba(245, 186, 49, 0.5);
+  }
+
+  .venue-divider-line {
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(245, 186, 49, 0.5), transparent);
+    margin: 28px auto 8px;
+  }
+
+  .family-host-box {
+    margin-bottom: 18px;
+  }
+  .host-name {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 4px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.95);
+  }
+  .host-relation {
+    font-size: 13.5px;
+    font-style: italic;
+    color: var(--gold-200);
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+  }
+
+  .rsvp-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #ffffff;
+    background: rgba(245, 186, 49, 0.14);
+    border: 1px solid rgba(245, 186, 49, 0.4);
+    padding: 10px 20px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .rsvp-label {
+    font-weight: 700;
+    color: var(--gold-300);
+    letter-spacing: 1.5px;
+  }
+  .rsvp-val {
+    color: #ffffff;
+    font-weight: 500;
   }
 
   /* Scroll Prompt */
@@ -842,7 +928,7 @@
 <!-- Main Scrollable Content -->
 <div id="scroll-container" class="scroll-container">
   
-  <!-- HERO INVITATION SECTION (Matches Screenshot 3) -->
+  <!-- HERO INVITATION SECTION (Groom & Family) -->
   <section class="hero-section" id="hero">
     <div class="hero-card" id="hero-card">
       <div class="hero-heart-top">
@@ -851,7 +937,11 @@
         </svg>
       </div>
 
-      <div class="hero-tagline">We're getting married</div>
+      <div class="hero-parents-header">Mrs. & Mr. Syed Khalil Ur Rahman</div>
+      
+      <p class="hero-blessing-text">
+        With the blessings of Allah and the love of our Family, are overjoyed to share that our Eldest Son
+      </p>
 
       <div class="hero-divider">
         <span class="div-line"></span>
@@ -859,24 +949,15 @@
         <span class="div-line"></span>
       </div>
 
-      <!-- Groom -->
-      <div class="person-block groom-block">
-        <h1 class="person-name">Ishaan</h1>
-        <p class="person-parents">Son of Mr. & Mrs. Malhotra</p>
-        <p class="person-degree">M.Tech</p>
-        <p class="person-profession">Software Engineer</p>
+      <!-- Groom Highlight -->
+      <div class="groom-highlight-block">
+        <h1 class="groom-name">Syed Fazal Ur Rahman</h1>
+        <p class="nikah-bond-tag">has entered into the bond of Nikah</p>
       </div>
 
-      <!-- Ampersand -->
-      <div class="hero-ampersand">&</div>
-
-      <!-- Bride -->
-      <div class="person-block bride-block">
-        <h1 class="person-name">Anaya</h1>
-        <p class="person-parents">Daughter of Mr. & Mrs. Peter</p>
-        <p class="person-degree">M.Com, CA</p>
-        <p class="person-profession">Charted Accountant</p>
-      </div>
+      <p class="hero-duas-text">
+        We humbly seek your duas and blessings for the newly married couple as they begin this beautiful journey together.
+      </p>
 
       <!-- Scroll Prompt -->
       <div class="scroll-prompt" id="scroll-prompt" onclick="document.getElementById('date-section').scrollIntoView({behavior:'smooth'})">
@@ -899,17 +980,18 @@
     <div class="flow-content">
       <div class="gold-ornament">❖ ❖ ❖</div>
       <h2 class="flow-title">Save Our Date</h2>
-      <p class="flow-subtitle">Join us in celebrating love, laughter, and happily ever after</p>
+      <p class="flow-subtitle">Nikah Ceremony of Syed Fazal Ur Rahman</p>
       
       <div class="date-hero-display">
         <div class="date-day-name">Sunday</div>
-        <div class="date-big-number">14</div>
+        <div class="date-big-number">06</div>
         <div class="date-month-year">December • 2026</div>
+        <div class="date-hijri">(26 Jumada al-Akhirah 1448 Hijri)</div>
       </div>
       
       <div class="muhurat-badge">
         <span class="sparkle">✨</span>
-        <span>Auspicious Muhurat: 07:30 PM Onwards</span>
+        <span>Nikah Ceremony: 11:00 AM</span>
       </div>
 
       <!-- Interactive Countdown -->
@@ -942,116 +1024,98 @@
     <div class="flow-content">
       <div class="gold-ornament">❖ ❖ ❖</div>
       <h2 class="flow-title">Wedding Ceremonies</h2>
-      <p class="flow-subtitle">Every ceremony is a chapter in our eternal love story</p>
+      <p class="flow-subtitle">Celebrating the sacred bonds of Nikah & Walima</p>
 
       <div class="ceremonies-timeline">
-        <!-- Event 1: Mehendi -->
-        <div class="ceremony-row">
-          <div class="ceremony-bullet">
-            <span class="bullet-dot"></span>
-            <span class="bullet-line"></span>
-          </div>
-          <div class="ceremony-body">
-            <div class="ceremony-time">Dec 13, 2026 • 03:00 PM</div>
-            <h3 class="ceremony-name">Mehendi & High Tea</h3>
-            <p class="ceremony-venue">📍 The Royal Palm Courtyard</p>
-            <span class="ceremony-attire">Attire: Vibrant Pastels & Florals</span>
-          </div>
-        </div>
-
-        <!-- Event 2: Sangeet -->
-        <div class="ceremony-row">
-          <div class="ceremony-bullet">
-            <span class="bullet-dot"></span>
-            <span class="bullet-line"></span>
-          </div>
-          <div class="ceremony-body">
-            <div class="ceremony-time">Dec 13, 2026 • 07:30 PM</div>
-            <h3 class="ceremony-name">Sangeet & Cocktail Night</h3>
-            <p class="ceremony-venue">📍 Crystal Lake Ballroom</p>
-            <span class="ceremony-attire">Attire: Glitz, Glamour & Indo-Western</span>
-          </div>
-        </div>
-
-        <!-- Event 3: Haldi -->
-        <div class="ceremony-row">
-          <div class="ceremony-bullet">
-            <span class="bullet-dot"></span>
-            <span class="bullet-line"></span>
-          </div>
-          <div class="ceremony-body">
-            <div class="ceremony-time">Dec 14, 2026 • 10:00 AM</div>
-            <h3 class="ceremony-name">Haldi & Phoolon Ki Holi</h3>
-            <p class="ceremony-venue">📍 The Sunlit Poolside Pavilion</p>
-            <span class="ceremony-attire">Attire: Shades of Sunshine Yellow</span>
-          </div>
-        </div>
-
-        <!-- Event 4: Baraat & Pheras -->
+        <!-- Event 1: Nikah -->
         <div class="ceremony-row">
           <div class="ceremony-bullet">
             <span class="bullet-dot gold-glow"></span>
             <span class="bullet-line"></span>
           </div>
           <div class="ceremony-body">
-            <div class="ceremony-time" style="color:var(--gold-200);">Dec 14, 2026 • 06:30 PM</div>
-            <h3 class="ceremony-name" style="color:var(--gold-300);">Baraat, Varmala & Pheras</h3>
-            <p class="ceremony-venue">📍 Grand Sunset Mandap by Lake</p>
-            <span class="ceremony-attire">Attire: Traditional Royal Indian Elegance</span>
+            <div class="ceremony-time" style="color:var(--gold-200);">Sunday, 06th Dec 2026 • 11:00 AM</div>
+            <div class="ceremony-hijri">(26 Jumada al-Akhirah 1448 Hijri)</div>
+            <h3 class="ceremony-name" style="color:var(--gold-300);">Nikah</h3>
+            <p class="ceremony-venue">📍 Ocean Nest Beach Resort, Udupi, Karnataka</p>
+            <div class="action-wrap" style="justify-content: flex-start; margin-top: 6px;">
+              <a href="https://share.google/bGGziKuqeaz5UT3Qa" target="_blank" rel="noopener" class="mini-pill-btn">
+                <span>📍</span> View Nikah Venue in Maps
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Event 5: Reception -->
+        <!-- Event 2: Dawat-e-Walima -->
         <div class="ceremony-row">
           <div class="ceremony-bullet">
             <span class="bullet-dot"></span>
           </div>
           <div class="ceremony-body">
-            <div class="ceremony-time">Dec 14, 2026 • 08:30 PM</div>
-            <h3 class="ceremony-name">Grand Reception & Royal Feast</h3>
-            <p class="ceremony-venue">📍 The Royal Palace Lawns</p>
-            <span class="ceremony-attire">Attire: Black Tie / Royal Festive</span>
+            <div class="ceremony-time">Saturday, 26th Dec 2026 • 07:00 PM Onwards</div>
+            <div class="ceremony-hijri">(17 Rajab 1448 Hijri)</div>
+            <h3 class="ceremony-name">Dawat-e-Walima</h3>
+            <p class="ceremony-venue">📍 At Our Residence Ground</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 3: VENUE & DIRECTIONS -->
+  <!-- SECTION 3: VENUE & LOCATION -->
   <section class="flow-section" id="venue-section">
     <div class="flow-content">
       <div class="gold-ornament">❖ ❖ ❖</div>
-      <h2 class="flow-title">Venue & Location</h2>
-      <p class="flow-subtitle">Where royal heritage meets timeless romance</p>
+      <h2 class="flow-title">Venues & Locations</h2>
+      <p class="flow-subtitle">We warmly welcome you to join us in our celebrations</p>
 
+      <!-- Nikah Venue Card -->
       <div class="venue-block">
-        <div class="venue-icon-gold">🏰</div>
-        <h3 class="venue-name-large">The Grand Lake Palace & Resort</h3>
+        <div class="venue-icon-gold">🏖️</div>
+        <div class="venue-tag-gold">NIKAH VENUE</div>
+        <h3 class="venue-name-large">Ocean Nest Beach Resort</h3>
         <p class="venue-address-text">
-          Lake Pichola Waterfront, Haridas Ji Ki Magri,<br>
-          Udaipur, Rajasthan — 313001
+          Udupi, Karnataka
         </p>
 
         <div class="action-wrap">
-          <a href="https://maps.google.com/?q=Lake+Pichola+Udaipur" target="_blank" rel="noopener" class="royal-pill-btn">
-            <span>📍</span> Open in Google Maps
+          <a href="https://share.google/bGGziKuqeaz5UT3Qa" target="_blank" rel="noopener" class="royal-pill-btn">
+            <span>📍</span> Open Nikah Venue in Google Maps
           </a>
         </div>
+      </div>
+
+      <div class="venue-divider-line"></div>
+
+      <!-- Walima Venue Card -->
+      <div class="venue-block" style="margin-top: 22px;">
+        <div class="venue-icon-gold">🏛️</div>
+        <div class="venue-tag-gold">WALIMA VENUE</div>
+        <h3 class="venue-name-large">At Our Residence Ground</h3>
+        <p class="venue-address-text">
+          Saturday, 26th December 2026 • 07:00 PM Onwards
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 4: FAMILY & FOOTER -->
+  <!-- SECTION 4: WITH BEST COMPLIMENTS & RSVP -->
   <section class="flow-section" id="footer-section">
     <div class="flow-content footer-flow">
       <div class="gold-ornament">❖ ❖ ❖</div>
-      <h3 class="footer-title">With Warmest Regards</h3>
-      <div class="families-text">
-        <p><strong>Malhotra Family</strong> & <strong>Peter Family</strong></p>
+      <h3 class="footer-title">With best compliments from :</h3>
+      <div class="family-host-box">
+        <p class="host-name">Syed Khalil Ur Rahman</p>
+        <p class="host-relation">S/o Late Syed Fasihur Rahman</p>
       </div>
-      <p class="helpline-text">For assistance: <strong>+91 98765 43210</strong></p>
+      
+      <div class="rsvp-badge">
+        <span class="rsvp-label">R.S.V.P.</span>
+        <span class="rsvp-val">All Relatives & Friends.</span>
+      </div>
+
       <div class="gold-line-div"></div>
-      <p class="bottom-credit">Celebration of Ishaan & Anaya • December 2026</p>
+      <p class="bottom-credit">Celebration of Syed Fazal Ur Rahman • December 2026</p>
     </div>
   </section>
 
@@ -1196,7 +1260,7 @@ if (audioToggle) {
 }
 
 // ---------------------------------------------------------------- Countdown Timer
-const targetWeddingDate = new Date('2026-12-14T19:30:00').getTime();
+const targetWeddingDate = new Date('2026-12-06T11:00:00').getTime();
 function updateCountdown() {
   const now = new Date().getTime();
   const diff = targetWeddingDate - now;
